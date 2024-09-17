@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <link href="estilo.css" rel="stylesheet" type="text/css">
+        <meta charset="UFT-8">
+        <meta name="viewport" content=“width=device-width, initial-scale=1.0;”>
+        <title>
+            Accessibility at Cine Brasília
+        </title>
+    </head>
+
+    <body>
+        <a href="#conteudo-principal" class="skip-to-content" tabindex="0">Skip to content</a>
+        <body id="topo"></body>
+        <header role="banner">
+            <nav class="cabecalho-idiomas">
+            <ul>
+                        <li><a href="index.html" tabindex="0">PT</a></li>
+                        <li><a href="index-en.html" tabindex="0" >EN</a></li>
+                        <li><a href="index-es.html" tabindex="0" >ES</a></li>
+                        <li><a href="index-it.html" tabindex="0" >IT</a></li>
+                        <li><a href="index-LIBRAS.html" tabindex="0" >LIBRAS</a></li>
+            </ul>
+            </nav>
+
+        <nav class="acessibilidade">
+            <button class="btn" onclick="changeFontSize('increase')" aria-label="Aumentar fonte">A+</button>
+            <button class="btn" onclick="changeFontSize('decrease')" aria-label="Diminuir fonte">A-</button>
+        </header>
+
+        <nav class="social-media">
+            <li><a href="https://www.facebook.com/cinebrasilia" aria-label="Facebook" tabindex="0" class="social-icon facebook-icon"></a></li>
+            <li><a href="https://www.instagram.com/cinebrasilia" aria-label="Instagram" tabindex="0" class="social-icon instagram-icon"></a></li>
+            <li><a href="https://www.youtube.com/c/CineBrasiliaOficial" aria-label="Youtube" tabindex="0" class="social-icon youtube-icon"></a></li>
+        </nav>
+        
+            <main id="conteudo-principal" role="main">
+                <section class="conteudo-sobre">
+                    <div>
+                        <h1>Acessibilidade no Cine Brasília</h1>
+                    </div>
+
+            <section class="conteudo-visita-virtual">
+                <h2 tabindex="0">Visita Virtual</h2>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BSZJI6sQmCk?si=G1wMHqrDlw9V0l3v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                <a href="#topo" class="voltar-ao-topo" tabindex="0">Voltar ao topo</a>
+                </div>
+            </section>
+
+            <div>
+            <section class="acessibilidade">
+            </div>
+        </main>
+        
+        <script>
+            function changeFontSize(action) {
+                 var currentFontSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+                
+                if (action === 'increase') {
+                    currentFontSize += 2;
+                } else if (action === 'decrease') {
+                    currentFontSize -= 2;
+                }
+
+                document.body.style.fontSize = currentFontSize + 'px';
+            }
+        </script>
+    </body>
+<section class="footer">
+    <div>
+        <h2>Obrigada pela visita!</h2>
+    </div>    
+</section>
+</html>

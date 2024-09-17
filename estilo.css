@@ -1,0 +1,210 @@
+*
+{
+background-color: #f9ddc1;
+font-family: Helvetica, sans-serif;
+}
+
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+    background-color: #f9ddc1;
+    font-style: none;
+    color: #8d1d1b;
+    padding: 0px;
+    z-index: 0;
+    transition: top 0.3s;
+    opacity: 0;
+}
+
+.skip-to-content:focus {
+    top: 0;
+    opacity: 1;
+}
+
+:focus {
+    outline: 3px solid #8d1d1b;
+}
+
+.acessibilidade {
+    display: flex; 
+    justify-content: flex-end; 
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    margin-right: 20px; 
+}
+
+.btn {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    margin: 5px;
+    width: auto;
+    height: auto;
+    background: #8d1d1b;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+}
+  
+section {
+    text-align: center; 
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+  }
+  
+  .social-media li {
+    margin: 0 08px; 
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: flex-start;
+    width: 25px; 
+    height: 25px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    text-indent: -9999px; 
+  }
+
+  .facebook-icon {
+    background-image: url('images/facebook-icon.svg');
+  }
+  
+  .instagram-icon {
+    background-image: url('images/instagram-icon.svg');
+  }
+
+  .youtube-icon {
+    background-image: url('images/youtube-icon.svg');
+  }
+
+.voltar-ao-topo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 05px 10px;
+    background-color: #8d1d1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-ao-topo:hover {
+    background-color: #c76341;
+}
+
+.cabecalho-idiomas {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.cabecalho-idiomas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.cabecalho-idiomas li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.cabecalho-idiomas a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #8d1d1b; 
+}
+
+.cabecalho-idiomas a:hover {
+    color: #ff0000;
+}
+
+body {
+    color: #ffffff;
+    font-family:'Helvetica', 'Arial Narrow', Arial, sans-serif; 
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;}
+    
+
+h1{ color: #8d1d1b;
+   font-size: 300%;
+   text-align: center;} 
+
+h2{color: #ffffff;
+    font-size: 150%; 
+    text-align: center; 
+   background-color: #c76341;}   
+
+h3{color: #000000;
+    font-size: 100%; 
+    font-weight: lighter;
+    text-align: left; 
+   background-color: #f9ddc1;}  
+
+p {Color:black;
+    Font-size:16px;}
+
+.imagem-placa-entrada-cine-brasilia {text-align: center;}
+
+    .imagem-placa-entrada-cine-brasilia img{
+    width: 700px;
+    height: auto;}
+
+    @media (max-width: 768px) {
+        .imagem-placa-entrada-cine-brasilia img {
+          width: 80%;}}
+
+.imagem-festival-cinema-brasileiro {text-align: center;}
+        
+        .imagem-festival-cinema-brasileiro img{
+            width: 700px;
+            height: auto;}
+        
+        @media (max-width: 768px) {
+                .imagem-festival-cinema-brasileiro img {
+                  width: 80%;}}
+
+.imagem-estacao-metro {text-align: center;}
+
+         .imagem-estacao-metro img{
+            width: 700px;
+            height: auto;}
+
+         @media (max-width: 768px) {
+            .imagem-estacao-metro img{
+                width: 80%;}}
+
+.imagem-sala-athos-bulcao {text-align: center;}
+
+         .imagem-sala-athos-bulcao img{
+            width: 700px;
+            height: auto;
+            object-fit: cover;}
+
+        @media (max-width: 768px) {
+            .imagem-sala-athos-bulcao img{
+                width: 80%;}}
+
+.imagem-trailer-cine {text-align: center;}
+
+            .imagem-trailer-cine img {
+                 width: 700px;
+                 height: auto;}
+            
+            @media (max-width: 768px) {
+                .imagem-trailer-cine img {
+                    width: 80%;}}
+
+.conteudo-visita-virtual {text-align: center;}
